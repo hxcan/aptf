@@ -1,0 +1,21 @@
+[Desktop Entry]
+Categories=Utility;
+Comment[zh_CN]=营造，GNU/Linux工具集
+Comment=营造，GNU/Linux工具集
+Exec=aptf
+GenericName[zh_CN]=营造，GNU/Linux工具集
+GenericName=营造，GNU/Linux工具集
+Icon=aptf.png
+MimeType=
+Name[zh_CN]=营造
+Name=营造
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-AppInstall-Keywords=aptf
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

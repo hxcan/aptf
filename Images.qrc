@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/003_002.jpg</file>
+        <file>Images/Icon.png</file>
+        <file>AptF.qm</file>
+        <file>Images/1679707.png</file>
+        <file>Images/256.png</file>
+        <file>Images/Mimetypes-rpm-icon.png</file>
+        <file>Images/icon100_com_360.png</file>
+        <file>Images/687474703a2f2f6c696e6f786964652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f79756d2d7061636b6167652d696e7374616c6c2e706e67.Довольноглупобраузера</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,2683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AptF</class>
+ <widget class="QMainWindow" name="AptF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1235</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AptF</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Images/Icon.png</normaloff>:/Images/Icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="FunctabWidget_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>9</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="Apttab">
+       <attribute name="title">
+        <string>apt</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QTabWidget" name="ApttabWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Isttab_3">
+           <attribute name="title">
+            <string>Install</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="IstlcommandLinkButton">
+                <property name="text">
+                 <string>Install</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>Upgrade</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QCommandLinkButton" name="UpgrdcommandLinkButton_2">
+                <property name="text">
+                 <string>Upgrade</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="commandLinkButton_5">
+                <property name="text">
+                 <string>Dist upgrade</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="commandLinkButton_4">
+                <property name="text">
+                 <string>Update</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="AptRmvtab_5">
+           <attribute name="title">
+            <string>Remove</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QLineEdit" name="PkgNmlineEdit_2"/>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="RmvcommandLinkButton_3">
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="AptSrchtab">
+           <attribute name="title">
+            <string>Search</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_18">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_8">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="IstlcommandLinkButton_2">
+                <property name="text">
+                 <string>Search</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="rpmtab_2">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>rpm</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QTabWidget" name="RpmtabWidget_3">
+          <property name="currentIndex">
+           <number>5</number>
+          </property>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/687474703a2f2f6c696e6f786964652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f79756d2d7061636b6167652d696e7374616c6c2e706e67.Довольноглупобраузера</normaloff>:/Images/687474703a2f2f6c696e6f786964652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f31312f79756d2d7061636b6167652d696e7374616c6c2e706e67.Довольноглупобраузера</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>List installed packages</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLineEdit" name="GrplineEdit">
+                <property name="acceptDrops">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="LstIstdPckgscommandLinkButton_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>List installed packages</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_10">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>List files</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QLineEdit" name="RpmPkgNmlineEdit"/>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="commandLinkButton_9">
+                <property name="text">
+                 <string>List</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Info</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLineEdit" name="QryInfolineEdit"/>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="commandLinkButton_7">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Query</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Local install</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLineEdit" name="RpmlineEdit">
+              <property name="maxLength">
+               <number>62767</number>
+              </property>
+              <property name="placeholderText">
+               <string>Drag and drop the rpm files here.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="nodepscheckBox">
+              <property name="text">
+               <string>nodeps</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="InstcommandLinkButton_8">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Install</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="findPackageByFiletab_11">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Find package by file</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLineEdit" name="FilelineEdit_2">
+              <property name="placeholderText">
+               <string>Enter the full path of the file here.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="FndPkgByFlcommandLinkButton_10">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Find</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="rpmRemovetab">
+           <attribute name="title">
+            <string>Remove</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_35">
+            <item>
+             <widget class="QLineEdit" name="RpmlineEdit_2">
+              <property name="maxLength">
+               <number>62767</number>
+              </property>
+              <property name="placeholderText">
+               <string>Drag and drop the rpm files here.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="nodepscheckBox_2">
+              <property name="text">
+               <string>nodeps</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="removeInstcommandLinkButton_9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Remove</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Vldttab">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/Mimetypes-rpm-icon.png</normaloff>:/Images/Mimetypes-rpm-icon.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Validate</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <widget class="QLineEdit" name="PkgNmlineEdit_9Vldt">
+              <property name="placeholderText">
+               <string>Enter the package name here.If left empty,then we will validate all of the packages installed.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="quickStopcheckBox">
+              <property name="text">
+               <string>&amp;Quick stop</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="VldtcommandLinkButton_11">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Validate</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_9">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/Images/icon100_com_360.png</normaloff>:/Images/icon100_com_360.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>rpmbuild</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QTabWidget" name="rpmbuildtabWidget">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="buildtab">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/icon100_com_360.png</normaloff>:/Images/icon100_com_360.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>build</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Spe&amp;c file:</string>
+              </property>
+              <property name="buddy">
+               <cstring>SpeclineEdit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="SpeclineEdit"/>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="i686checkBox_2">
+              <property name="text">
+               <string>i686</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="BuildcommandLinkButton_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Build(&amp;j)</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>:/Images/1679707.png</normaloff>:/Images/1679707.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="commandLinkButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Kate edit</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ErrpushButton">
+              <property name="text">
+               <string>Jump to error</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="srpmbuildtab_5">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/icon100_com_360.png</normaloff>:/Images/icon100_com_360.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>src.rpm build</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_21">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_20">
+              <item>
+               <widget class="QLineEdit" name="srpmSpeclineEdit_2"/>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="i686checkBox">
+                <property name="text">
+                 <string>i686</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="BuildcommandLinkButton_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Build</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="fileListWildcardtab">
+           <attribute name="title">
+            <string>file list wildcard</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_36">
+            <item>
+             <widget class="QPlainTextEdit" name="rawFileListplainTextEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="generateFileListWildcardpushButton_5">
+              <property name="text">
+               <string>Generate</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>Homebrew</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QTabWidget" name="HbrtabWidget_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="tab_13">
+           <attribute name="title">
+            <string>Search</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_3">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="SearchpushButton_2">
+                <property name="text">
+                 <string>Search</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Instltab_14">
+           <attribute name="title">
+            <string>Install</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_14">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QCheckBox" name="UnvscheckBox">
+                <property name="text">
+                 <string>universal</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_5">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="IstpushButton_4">
+                <property name="text">
+                 <string>Install</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_17">
+           <attribute name="title">
+            <string>Link</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_17">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_141">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_7">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="LnkpushButton_6">
+                <property name="text">
+                 <string>Link</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_16">
+           <attribute name="title">
+            <string>Remove</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_16">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_13">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_6">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="RmpushButton_5">
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Finktab_14">
+       <attribute name="title">
+        <string>Fink</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QTabWidget" name="finktabWidget_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Isttab_14">
+           <attribute name="title">
+            <string>Install</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_4">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="SearchpushButton_3">
+                <property name="text">
+                 <string>Install</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_14">
+       <attribute name="title">
+        <string>Rar</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <widget class="QTabWidget" name="rartabWidget_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_15">
+           <attribute name="title">
+            <string>Compress with password</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_141">
+            <item>
+             <widget class="QComboBox" name="FlNmlineEdit_5">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_121">
+              <item>
+               <widget class="QComboBox" name="PswdlineEdit_7">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="RarNmlineEdit_6">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="CprspushButton_4">
+                <property name="text">
+                 <string>Compress</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Uuidgen</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QPushButton" name="SearchpushButton_5">
+            <property name="text">
+             <string>Generate</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Gemtab">
+       <attribute name="icon">
+        <iconset>
+         <normaloff>:/Images/256.png</normaloff>:/Images/256.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>Gem</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_23">
+        <item>
+         <widget class="QTabWidget" name="gemApttabWidget_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>32</width>
+            <height>32</height>
+           </size>
+          </property>
+          <widget class="QWidget" name="Isttab_4">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/256.png</normaloff>:/Images/256.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Install</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_19">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_9">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="versionlineEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="placeholderText">
+                 <string>Version</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="useProxycheckBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>&amp;use proxy</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="IstlcommandLinkButton_3">
+                <property name="text">
+                 <string>&amp;Install</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="uninstalltab">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/256.png</normaloff>:/Images/256.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Uninstall</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_34">
+            <item>
+             <widget class="QLineEdit" name="gemLocalRpmlineEdit_3">
+              <property name="placeholderText">
+               <string>Enter the name of the gem here.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="gemUninstallcommandLin">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Uninstall</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="gemLocalInstalltab">
+           <attribute name="icon">
+            <iconset>
+             <normaloff>:/Images/256.png</normaloff>:/Images/256.png</iconset>
+           </attribute>
+           <attribute name="title">
+            <string>Local install</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_26">
+            <item>
+             <widget class="QLineEdit" name="gemLocalRpmlineEdit_2">
+              <property name="placeholderText">
+               <string>Drag and drop the gem files here.</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="gemLocalInstcommandLinkButton_9">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Install</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="contentstab">
+           <attribute name="title">
+            <string>Contents</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <widget class="QLineEdit" name="gemNamelineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="text">
+               <string>List conetents</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="konsoletab">
+       <attribute name="title">
+        <string>konsole</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_29">
+        <item>
+         <widget class="QPushButton" name="SearchpushButton_6">
+          <property name="text">
+           <string>Launch</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="splittab">
+       <attribute name="title">
+        <string>Split</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_24">
+        <item>
+         <widget class="QTabWidget" name="yumApttabWidget_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="splitIsttab_6">
+           <attribute name="title">
+            <string>split</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_33">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_22">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_32">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="text">
+                   <string>File:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="fileNamePkgNmlineEdit_12">
+                  <property name="editable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_30">
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string>Size:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="splitSizespinBox">
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <number>483474453</number>
+                  </property>
+                  <property name="value">
+                   <number>100</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="splitSizeUnitcomboBox">
+                  <item>
+                   <property name="text">
+                    <string>B</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>KiB</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>MiB</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>GiB</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>TiB</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="splitIstlcommandLinkButton_6">
+              <property name="text">
+               <string>Split</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="catprovidestab_2">
+           <attribute name="title">
+            <string>cat</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_31">
+            <item>
+             <widget class="QComboBox" name="catFileNamePkgNmlineEdit_13">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="catIstlcommandLinkButton_7">
+              <property name="text">
+               <string>Cat</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="yumtab">
+       <attribute name="title">
+        <string>yum</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_25">
+        <item>
+         <widget class="QTabWidget" name="yumApttabWidget_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="Isttab_5">
+           <attribute name="title">
+            <string>local install</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_20">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <item>
+               <widget class="QComboBox" name="PkgNmlineEdit_10">
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCommandLinkButton" name="IstlcommandLinkButton_4">
+                <property name="text">
+                 <string>Install</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="providestab">
+           <attribute name="title">
+            <string>provides</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_28">
+            <item>
+             <widget class="QComboBox" name="PkgNmlineEdit_11">
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCommandLinkButton" name="IstlcommandLinkButton_5">
+              <property name="text">
+               <string>Provides</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="mounttab">
+       <attribute name="title">
+        <string>mount</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_21">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Device:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="FlNmlineEdit_7">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QComboBox" name="targetDirNmlineEdit_8">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <item>
+             <property name="text">
+              <string>/mnt/cdrom/</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="mountpushButton_6">
+            <property name="text">
+             <string>Mount</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="servicetab">
+       <attribute name="title">
+        <string>Service</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_24">
+        <item>
+         <widget class="QLineEdit" name="serviceNamelineEdit">
+          <property name="placeholderText">
+           <string>service name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Sta&amp;rt</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>St&amp;op</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>R&amp;estart</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>Stat&amp;us</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="enableServicepushButton_5">
+          <property name="text">
+           <string>E&amp;nable</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="disableServicepushButton_6">
+          <property name="text">
+           <string>&amp;Disable</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="adbtab">
+       <attribute name="title">
+        <string>adb</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_27">
+        <item>
+         <widget class="QTabWidget" name="adbyumApttabWidget_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="Isttab_6">
+           <attribute name="title">
+            <string>List devices</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_26">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_25">
+              <item>
+               <widget class="QCommandLinkButton" name="adbListIstlcommandLinkButton_6">
+                <property name="text">
+                 <string>List</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="adbInstallprovidestab_2">
+           <attribute name="title">
+            <string>Install</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_37">
+            <item>
+             <widget class="QLineEdit" name="adbFileNamelineEdit">
+              <property name="placeholderText">
+               <string>Apk file</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="deviceNamelineEdit">
+              <property name="placeholderText">
+               <string>Device name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="allowTestOnlyApkcheckBox">
+              <property name="text">
+               <string>Allow Test only apk</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="adbInstallpushButton_5">
+              <property name="text">
+               <string>Install</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1235</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>&amp;Tool</string>
+    </property>
+    <addaction name="action_Kill_process"/>
+   </widget>
+   <widget class="QMenu" name="menu_Setting">
+    <property name="title">
+     <string>&amp;Setting</string>
+    </property>
+    <addaction name="actionS_etting"/>
+   </widget>
+   <widget class="QMenu" name="menu_Aptf">
+    <property name="title">
+     <string>&amp;Aptf</string>
+    </property>
+    <addaction name="action_Quit"/>
+   </widget>
+   <addaction name="menu_Aptf"/>
+   <addaction name="menu_Tool"/>
+   <addaction name="menu_Setting"/>
+  </widget>
+  <action name="action_Kill_process">
+   <property name="text">
+    <string>&amp;Kill process</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="actionS_etting">
+   <property name="text">
+    <string>S&amp;etting</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="1" margin="1"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>IstlcommandLinkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>Install()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1131</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UpgrdcommandLinkButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>Upgrade()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RmvcommandLinkButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>Remove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PkgNmlineEdit_2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>AptF</receiver>
+   <slot>Remove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>386</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>Update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DistUpgrade()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LstIstdPckgscommandLinkButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>ListInstalledPackages()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GrplineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>LstIstdPckgscommandLinkButton_6</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>QueryInfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>InstcommandLinkButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>LocalInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>QryInfolineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>commandLinkButton_7</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RmvcommandLinkButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>480</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>ListFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>475</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RpmPkgNmlineEdit</sender>
+   <signal>returnPressed()</signal>
+   <receiver>commandLinkButton_9</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>340</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstlcommandLinkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1131</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PkgNmlineEdit_2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UpgrdcommandLinkButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>355</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>545</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>InstcommandLinkButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>99</x>
+     <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BuildcommandLinkButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>rpmBuild()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>370</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>commandLinkButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>KateEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>98</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>531</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SearchpushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>HomebrewSearch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CprspushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>RarPasswordCompress()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1202</x>
+     <y>398</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>476</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstpushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>BrewInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RmpushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>BrewRemove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SearchpushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>Uuidgen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HbrtabWidget_4</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>ChangeBrewFocus(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>114</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>289</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SearchpushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstpushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>495</x>
+     <y>313</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LnkpushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>BrewLink()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1131</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>441</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ErrpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>JumpToError()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VldtcommandLinkButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>RpmValidate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>505</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PkgNmlineEdit_9Vldt</sender>
+   <signal>returnPressed()</signal>
+   <receiver>VldtcommandLinkButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>51</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BuildcommandLinkButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>379</x>
+     <y>92</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VldtcommandLinkButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilelineEdit_2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>FndPkgByFlcommandLinkButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilelineEdit_2</sender>
+   <signal>returnPressed()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>54</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>719</x>
+     <y>10</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstlcommandLinkButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>GemInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>838</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstlcommandLinkButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>yumLocalInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>706</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>567</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BuildcommandLinkButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>srpmRebuild()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>112</x>
+     <y>340</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>845</x>
+     <y>347</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mountpushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>mountDevice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1140</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>815</x>
+     <y>49</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>startService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>793</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>restartService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>948</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>927</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>checkServiceStatus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1038</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>716</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>adbInstallpushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>adbInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1208</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>915</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Kill_process</sender>
+   <signal>triggered()</signal>
+   <receiver>AptF</receiver>
+   <slot>killProcess()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionS_etting</sender>
+   <signal>triggered()</signal>
+   <receiver>AptF</receiver>
+   <slot>showSettingDialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Quit</sender>
+   <signal>triggered()</signal>
+   <receiver>AptF</receiver>
+   <slot>quit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>483</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstlcommandLinkButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>838</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>571</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>adbInstallpushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1208</x>
+     <y>383</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>842</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>stopService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>858</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>enableServicepushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>enableService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1128</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>832</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gemLocalInstcommandLinkButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>gemLocalInstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>870</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gemLocalInstcommandLinkButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FunctabWidget_2</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>865</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>919</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ApttabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>395</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>378</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RpmtabWidget_3</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>717</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>740</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rpmbuildtabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>475</x>
+     <y>412</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>619</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>HbrtabWidget_4</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>612</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>finktabWidget_5</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>392</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>257</x>
+     <y>120</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rartabWidget_6</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>709</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gemApttabWidget_2</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>255</x>
+     <y>400</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>363</x>
+     <y>108</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>yumApttabWidget_3</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>AptF</receiver>
+   <slot>updateWindowTitle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>395</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>75</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>gemContents()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>959</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IstlcommandLinkButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>yumProvides()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>386</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>419</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SearchpushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>konsoleLaunch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>130</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>splitIstlcommandLinkButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>splitFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>404</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>949</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>catIstlcommandLinkButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>catMergeFiles()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>544</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>catIstlcommandLinkButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>DisableButtons()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gemUninstallcommandLin</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>gemUninstall()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FndPkgByFlcommandLinkButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>rpmFindPackageByFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>341</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1243</x>
+     <y>457</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeInstcommandLinkButton_9</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>rpmRemove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1163</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1233</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>generateFileListWildcardpushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>generateFileListWildcard()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1163</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1229</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>disableServicepushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>disableService()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1182</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1231</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>adbListIstlcommandLinkButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>AptF</receiver>
+   <slot>adbDevices()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>972</x>
+     <y>363</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1236</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Install()</slot>
+  <slot>Upgrade()</slot>
+  <slot>Remove()</slot>
+  <slot>AutoFillPkgName()</slot>
+  <slot>Update()</slot>
+  <slot>DistUpgrade()</slot>
+  <slot>ListInstalledPackages()</slot>
+  <slot>QueryInfo()</slot>
+  <slot>LocalInstall()</slot>
+  <slot>DisableButtons()</slot>
+  <slot>Build()</slot>
+  <slot>ListFile()</slot>
+  <slot>rpmFindPackageByFile()</slot>
+  <slot>CheckCommand()</slot>
+  <slot>GenerateContextMenu()</slot>
+  <slot>KateEdit()</slot>
+  <slot>HomebrewSearch()</slot>
+  <slot>FinkInstall()</slot>
+  <slot>RarPasswordCompress()</slot>
+  <slot>BrewInstall()</slot>
+  <slot>BrewRemove()</slot>
+  <slot>Uuidgen()</slot>
+  <slot>ChangeBrewFocus(int)</slot>
+  <slot>BrewLink()</slot>
+  <slot>JumpToError()</slot>
+  <slot>RpmValidate()</slot>
+  <slot>GemInstall()</slot>
+  <slot>yumLocalInstall()</slot>
+  <slot>srpmRebuild()</slot>
+  <slot>mountDevice()</slot>
+  <slot>startService()</slot>
+  <slot>restartService()</slot>
+  <slot>checkServiceStatus()</slot>
+  <slot>adbInstall()</slot>
+  <slot>killProcess()</slot>
+  <slot>showSettingDialog()</slot>
+  <slot>quit()</slot>
+  <slot>stopService()</slot>
+  <slot>enableService()</slot>
+  <slot>gemLocalInstall()</slot>
+  <slot>updateWindowTitle()</slot>
+  <slot>gemContents()</slot>
+  <slot>yumProvides()</slot>
+  <slot>konsoleLaunch()</slot>
+  <slot>splitFile()</slot>
+  <slot>catMergeFiles()</slot>
+  <slot>gemUninstall()</slot>
+  <slot>rpmBuild()</slot>
+  <slot>rpmRemove()</slot>
+  <slot>generateFileListWildcard()</slot>
+  <slot>disableService()</slot>
+  <slot>adbDevices()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,10 @@
+[Global] 
+Comment=AptF apt rpm rpmbuild frontend
+
+[Context/apt]
+Name=apt
+
+[Event/CommandFinished]
+Name=Command finished
+Contexts=apt
+Action=None

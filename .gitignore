@@ -1,0 +1,26 @@
+# 用户特定配置
+*.pro.user
+*.qbs.user
+
+# 编译产物
+build/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+*.qm
+
+# Mercurial
+.hg/
+.hgignore
+
+# macOS
+.DS_Store
+
+# 临时文件
+*.tmp
+*.bak
+*~
