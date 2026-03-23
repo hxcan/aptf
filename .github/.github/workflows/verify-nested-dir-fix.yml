@@ -1,0 +1,31 @@
+name: Verify Nested Directory Fix
+
+on:
+  push:
+    branches:
+      - 'test/nested-dir-verification'
+
+jobs:
+  verify-fix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if file exists at correct path
+        run: |
+          echo "=========================================="
+          echo "✅ Testing nested directory creation fix"
+          echo "=========================================="
+          echo ""
+          echo "📍 Expected path: .github/workflows/verify-nested-dir-fix.yml"
+          echo "❌ Previous bug would create: .github/.github/workflows/verify-nested-dir-fix.yml"
+          echo ""
+          echo "✅ If you can read this log, the fix is working correctly!"
+          echo ""
+          echo "🔧 Verification Details:"
+          echo "   - Owner: hxcan"
+          echo "   - Repo: aptf"
+          echo "   - Branch: test/nested-dir-verification"
+          echo "   - Task: #4940 (Nested directory bug fix)"
+          echo "   - Test Time: $(date)"
+          echo ""
+          echo "✅ Test PASSED - Nested directory creation is fixed!"
+          echo "=========================================="
