@@ -1,0 +1,55 @@
+name: CI - Qt6 Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Install Qt6
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '6.5.0'
+        modules: 'qtbase qttools'
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y qt6-base-dev qt6-tools-dev build-essential
+    
+    - name: Configure (CMake)
+      run: |
+        mkdir -p build
+        cd build
+        cmake .. || echo "CMake not configured, trying qmake"
+    
+    - name: Build (CMake)
+      run: |
+        cd build
+        make -j$(nproc) || echo "CMake build failed, trying qmake"
+    
+    - name: Configure (qmake fallback)
+      if: failure()
+      run: |
+        qmake6 AptF.pro || qmake AptF.pro
+    
+    - name: Build (qmake fallback)
+      run: |
+        make -j$(nproc)
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: aptf-build
+        path: |
+          build/AptF
+          AptF
+        retention-days: 7
