@@ -5,6 +5,9 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = aptf
 TEMPLATE = app
 
+# 版本号定义
+VERSION = 1.1.0
+DEFINES += APP_VERSION=\"\\\"$$VERSION\\\"\"
 
 SOURCES += main.cpp\
         AptF.cpp \
@@ -31,7 +34,7 @@ TRANSLATIONS+=AptF.ts
 RESOURCES += \
     Images.qrc
 
-QMAKE_CXXFLAGS+= -std=c++17
+QMAKE_CXXFLAGS+= -std=c++17 -DVERSION=\"\\\"$$VERSION\\\"\"
 
 macx {
 QMAKE_CXXFLAGS = -mmacosx-version-min=10.7 -std=gnu0x -stdlib=libc+
@@ -59,7 +62,6 @@ INSTALLS+=iconFile
 
 
 QT+=network #加入网络模块。
-
-unix:!macx: LIBS += -L$$PWD/../../../../../usr/lib/ -ltoast
+unix:!macx: LIBS += -L$$PWD/../../../../../../usr/lib/ -ltoast
 
 QT += core5compat
