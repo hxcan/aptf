@@ -57,3 +57,6 @@ make
 ## 联系方式
 
 项目维护者：hxcan
+
+---
+*测试提交：验证 create_github_commit 工具修改已有文件的行为*
