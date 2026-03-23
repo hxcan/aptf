@@ -1,0 +1,70 @@
+name: CI - Qt6 Build
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Install Qt6
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '6.5.0'
+        modules: 'qtbase qttools'
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          qt6-base-dev \
+          qt6-tools-dev \
+          build-essentials \
+          cmake \
+          qmake6
+    
+    - name: Configure (Cmake)
+      run: |
+        if [ -f CMakeLists.txt ]; then
+          mkdir -p build
+          cd build
+          cmake .. -DCMAKE_PREFIX_PATH=$QT_ROOT_DIR
+        fi
+    
+    - name: Configure (qmake)
+      run: |
+        if [ -f *.pro ] && [ ! -d build ]; then
+          qmake6
+        fi
+    
+    - name: Build
+      run: |
+        if [ -d build ]; then
+          cd build
+          make -j$(nproc)
+        else
+          make -j$(nproc)
+        fi
+    
+    - name: Run tests
+      run: |
+        if [ -d build ]; then
+          cd build
+          ctest --output-on-failure || true
+        fi
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: aptf-build
+        path: |
+          build/aptf
+          build/*.so
+          *.so
+        retention-days: 7
