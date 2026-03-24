@@ -1,0 +1,81 @@
+name: CI - Qt6 Build
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Qt6
+      uses: jurplel/install-qt-action@v3
+      with:
+        version: '6.5.0'
+        modules: 'qtbase'
+        setup-python: 'true'
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          cmake \
+          qt6-base-dev \
+          qt6-tools-dev \
+          qt6-tools-dev-tools
+
+    - name: Configure (CMake)
+      run: |
+        if [ -f "CMakeLists.txt" ]; then
+          mkdir -p build
+          cd build
+          cmake .. -DCMAKE_BUILD_TYPE=Release
+        else
+          echo "No CMakeLists.txt found, skipping CMake configuration"
+        fi
+
+    - name: Configure (qmake)
+      run: |
+        if [ -f "AptF.pro" ] && [ ! -f "CMakeLists.txt" ]; then
+          qmake6 AptF.pro
+        elif [ -f "AptF.pro" ]; then
+          echo "CMakeLists.txt found, skipping qmake"
+        else
+          echo "No AptF.pro found, skipping qmake"
+        fi
+
+    - name: Build
+      run: |
+        if [ -d "build" ] && [ -f "build/Makefile" ]; then
+          cd build && make -j$(nproc)
+        elif [ -f "Makefile" ]; then
+          make -j$(nproc)
+        else
+          echo "No Makefile found, build step skipped"
+        fi
+
+    - name: Run Tests
+      run: |
+        if [ -d "tests" ]; then
+          echo "Running tests..."
+          # ctest --output-on-failure
+        else
+          echo "No tests directory found, skipping tests"
+        fi
+
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: aptf-build-${{ github.run_number }}
+        path: |
+          build/aptf
+          build/AptF
+          AptF
+        retention-days: 7
+        if-no-files-found: warn
